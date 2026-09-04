@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>블랙잭킹</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    .wrapper {
+      position: relative;
+      width: 100%;
+      max-width: 941px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 900px) {
+      .wrapper {
+        width: 45%;
+        max-width: 720px;
+      }
+    }
+
+    .wrapper img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    /* 클릭 영역 공통 */
+    .click-zone {
+      position: absolute;
+      left: 3.4%;
+      width: 91.7%;
+      display: block;
+      cursor: pointer;
+      z-index: 10;
+    }
+
+    /* 1. 생방송 공지방 */
+    .zone1 {
+      top: 50%;
+      height: 8.9%;
+    }
+
+    /* 2. 카카오톡 문의 */
+    .zone2 {
+      top: 59%;
+      height: 10%;
+    }
+
+    /* 3. 텔레그램 문의 */
+    .zone3 {
+      top: 69.8%;
+      height: 10%;
+    }
+
+    /* 4. 블랙잭킹 가족방 */
+    .zone4 {
+      top: 80%;
+      height: 10%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="wrapper">
+
+    <!-- 랜딩 이미지 -->
+    <img
+      src="./landing.png"
+      alt="블랙잭킹 랜딩페이지"
+    />
+
+    <!-- 1. 생방송 공지방 -->
+    <a
+      class="click-zone zone1"
+      href="https://open.kakao.com/o/sNrlcFGi"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="생방송 공지방">
+    </a>
+
+    <!-- 2. 카카오톡 문의 -->
+    <a
+      class="click-zone zone2"
+      href="https://open.kakao.com/o/s266v8Ag"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="카카오톡 문의">
+    </a>
+
+    <!-- 3. 텔레그램 문의 -->
+    <a
+      class="click-zone zone3"
+      href="https://telegram.me/storyinquiry"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="텔레그램 문의">
+    </a>
+
+    <!-- 4. 블랙잭킹 가족방 -->
+    <a
+      class="click-zone zone4"
+      href="https://open.kakao.com/o/gJqGHqLi"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="블랙잭킹 가족방">
+    </a>
+
+  </div>
+
+</body>
+</html>
